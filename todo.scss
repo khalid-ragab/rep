@@ -1,0 +1,100 @@
+.both{
+    display: flex;
+    justify-content: center;
+}
+.modal {
+    display: flex;
+    width: 498px;
+    height: 340px;
+    border-radius: 0.5rem;
+    border: 0;
+    margin-top: 285px;
+    margin-left: 393px;
+    background:#e2e1de;
+    position: relative;
+    &__overlay {
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 9999; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    &__button {
+        color: white;
+        background-color: #646ff0;
+        margin-bottom: 7px;
+        height: 41px;
+        width: 115px;
+        border-radius: 0.3rem;
+        border: 0;
+        font-weight: 550;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+    }
+    &__title{
+        color: #646681;
+        font-size: 1.3rem;
+        font-weight: 599;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+    &__close {
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        width: 40px;
+        height: 30px;
+        border: 0;
+        background-color:#e2e1de ;
+        margin-right: 0;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+   &__form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+   }
+   
+   &__select {
+    margin-top: 0px;
+    width: 460px;
+    height: 45px;
+    border: 0;
+    font-size: 1rem;
+    padding-left: 10px;
+   }
+  
+}
+
+.mix {
+    display: flex;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width: 675px) {
+ .modal{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    margin-left: 25px;
+    &__button{
+        position: absolute;
+        left: 15px;
+        height: 38px;
+        width: 120px;
+    }
+ } 
+}

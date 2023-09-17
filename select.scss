@@ -1,0 +1,26 @@
+.select {
+    &__box{
+    background-color:thistle;
+    color: #585858;
+    border-radius: 0.5rem;
+    border: 0;
+    margin-bottom: 5px;
+    height: 43px;
+    width: 150px;
+    margin-left: 483px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+  &__item{
+    font-size: 1rem;
+  }
+
+}
+@media(max-width: 675px) {
+  .select__box{
+    margin-left: 295px;
+    width: 177px;
+  }
+ }

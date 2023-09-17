@@ -1,0 +1,18 @@
+.header {
+&__title {
+    margin-left: 539px;
+    margin-top: 22px;
+    color:teal ;
+    font-size: 2.5rem;
+  }
+}
+@media(max-width: 675px) {
+ .header{
+  text-align: center;  
+  &__title{
+    margin-left: 0;
+    font-size: 3.5rem;
+    margin-top: 17px;
+  }
+} 
+}

@@ -1,0 +1,115 @@
+.list {
+  display: flex;
+  flex-direction: column; 
+  background-color: lightcyan;
+  width: 746px;
+  margin-left: 266px;
+  border-radius: 10px;
+    &__txt {
+      background-color: lightgray;
+      color: #585858;
+      font-weight: 500;
+      height: 35px;
+      width: 97px;
+      border-radius: 0.5rem;
+      margin-top: 20px;
+      padding-top: 5px;
+      text-align: center;
+      margin-left: 323px;
+    }
+    &__ul {
+      padding: 0;
+    }
+  }
+
+  .task {
+    border-radius: 0.2rem;
+      list-style-type: none;
+      font-size: 1rem;
+      margin-left: 24px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-left: 50px;
+      padding-bottom: 8px;
+      padding-top: 8px;
+      color: dimgray;
+      background-color: white;
+      width: 700px;
+      position: relative; 
+      &.checked &__name {
+        text-decoration: line-through;
+      }
+      &__timestamp {
+        text-decoration: none!important
+      }
+    &__checkbox{
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      background-color: #dedfe1;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+    &__timestamp{
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0;
+      margin-left: 0;
+      text-decoration: none!important;
+    }
+  }
+  .delete {
+    &__button {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%); 
+      width: 30px;
+      height: 30px;
+      background-color: #dedfe1;
+      border: 0;
+      border-radius: 0.2rem;
+      cursor: pointer;
+    }
+    &__icon {
+      height: 20px;
+      margin-top: 4px;
+    }
+  }
+  .edit{
+    &__button{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%); 
+      width: 30px;
+      height: 30px;
+      background-color: #dedfe1;
+      border: 0;
+      border-radius: 0.2rem;
+      cursor: pointer;
+    }
+    &__icon{
+      height: 20px;
+      margin-top: 4px;
+    }
+  }
+  @media(max-width: 675px) {
+    .list{
+      margin-left: 13px;
+      width: 95%;
+      &__txt{
+        margin-left: 187px;
+      }
+    }
+    .task{
+      width: 95%;
+      margin-left: 12px;
+    }
+  }
+  
